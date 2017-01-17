@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "^4.14.0",
+    "pty.js": "^0.3.1",
+    "socket.io": "^1.7.2"
+  }
+}
