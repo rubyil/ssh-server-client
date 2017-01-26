@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Terminal</h3>
+  </div>
+  <div class="panel-body">
+    <div class="console-area">
+      <cite *ngFor="let message of messages">
+        {{message}}
+        <br />
+      </cite>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-dollar"></i>:</span>
+      <input type="text" class="form-control" [(ngModel)]="message" (keyup.enter)="send()">
+      <span class="input-group-addon" (click)="send()"><i class="md md-chevron-right"></i>></span>
+    </div>
+  </div>
+</div>
